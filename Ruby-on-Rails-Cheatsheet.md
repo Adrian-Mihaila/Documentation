@@ -16,6 +16,39 @@ Looking for [Ruby](../master/Ruby-Cheatsheet.md)?
 controller > route > view  
 learn request/response cycle: https://www.codecademy.com/articles/request-response-cycle-forms
 
+#### Example
+GET /about HTTP/1.1
+host: 127.0.0.1
+
+## Routes
+Routes are matchers the URL that is requested
+when you have a GET for "/about" it will say:
+I see you requested "/about", we will give that to the AboutController to handle
+
+## Models
+database wrapper
+User model:
+- query for records
+- wrap individual records
+
+When you loading up a user profile on Twitter:
+- Route: We are looking for xxxx user, let's go to the controller
+- Controller: Go find xxxx user in database, if you find it we will render the HTML, the view for this profile
+
+
+## Viwes 
+Your response body content that can be anything:
+- HTML
+- CSV
+- PDF
+- XML
+This is what gets send back to the browser and displayed
+
+## Controllers
+Decides how to process a request and define a response
+Hey you tried to create a user account and we will direct you to user page
+Hey you tried to create a user account but you will get and error because password was too short
+
 #### 1. Generate a new Rails app
 
 ```bash
