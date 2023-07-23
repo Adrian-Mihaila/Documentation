@@ -265,3 +265,7 @@ rake db:seed                            # Load the seed data from db/seeds.rb
    http://stackoverflow.com/questions/25951969/rails-4-2-and-vagrant-get-a-blank-page-and-nothing-in-the-logs
 2. Follow instructions to use postgres:  
    https://www.digitalocean.com/community/tutorials/how-to-setup-ruby-on-rails-with-postgres
+
+## Syntax
+<%= with the equals will render the output to the view for the user to see
+<% without the equals will execute the embedded Ruby but not display it
